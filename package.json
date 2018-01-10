@@ -17,6 +17,15 @@
   },
   "homepage": "https://github.com/Katreque/katrequefy#readme",
   "devDependencies": {
-    "aliv": "^1.9.1"
+    "aliv": "^1.9.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.8",
+    "vue-template-compiler": "^2.5.13",
+    "vue.js": "^0.3.2",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "vue-loader": "^13.7.0"
   }
 }
