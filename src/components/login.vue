@@ -1,9 +1,17 @@
 <template>
-  <p>Kappa</p>
+  <div class="col-md-8 text-center">
+    <p>Usuário</p>
+    <input type="text"/>
+    <p>Senha</p>
+    <input type="password"/>
+  </div>
 </template>
 
 <script>
-  console.log("Pride!")
+  export default {
+    name: 'katrequefy',
+    components: {}
+  }
 </script>
 
 <style>
