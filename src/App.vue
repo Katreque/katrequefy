@@ -1,17 +1,13 @@
 <template>
-  <div id="katrequefy">
+  <div id="#katrequefy">
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import Login from './components/login'
-
   export default {
     name: 'katrequefy',
-    components: {
-      Login
-    }
+    components: {}
   }
 </script>
 
