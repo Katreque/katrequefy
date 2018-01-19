@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack & aliv",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,12 +25,13 @@
     "css-loader": "^0.28.8",
     "style-loader": "^0.19.1",
     "vue-template-compiler": "^2.5.13",
-    "vue.js": "^0.3.2",
     "webpack": "^3.10.0"
   },
   "dependencies": {
     "bootstrap-vue": "^1.4.0",
+    "express": "^4.16.2",
     "popper.js": "^1.12.9",
+    "vue": "^2.5.13",
     "vue-loader": "^13.7.0",
     "vue-router": "^3.0.1"
   }

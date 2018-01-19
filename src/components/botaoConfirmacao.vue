@@ -25,7 +25,7 @@
   .btn {
     margin-right: 5px;
   }
-  
+
   .bounce-enter-active {
     animation: bounce-in .5s;
   }
