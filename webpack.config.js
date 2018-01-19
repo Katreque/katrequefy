@@ -5,6 +5,10 @@ module.exports = {
   output: {
     filename: './dist/bundle.js',
   },
+  node: {
+    fs: 'empty',
+    net: 'empty'
+  },
   watch: true,
   module: {
     rules: [
@@ -18,7 +22,11 @@ module.exports = {
          'style-loader',
          'css-loader'
        ]
-      }
+     },
+     {
+       test: /\.js$/,
+       loader: 'babel-loader'
+     }
     ]
   },
   resolve: {
