@@ -1,6 +1,6 @@
-var express = require('express');
-var path = require('path');
-var serveStatic = require('serve-static');
+import express from 'express'
+import path from 'path'
+import serveStatic from 'serve-static'
 app = express();
 
 app.use(serveStatic(__dirname + "/dist"));

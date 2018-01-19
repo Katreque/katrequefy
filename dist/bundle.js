@@ -41530,7 +41530,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_router_js__ = __webpack_require__(335);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globalImports_js__ = __webpack_require__(340);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__server_js__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__server_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__server_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_bootstrap_dist_css_bootstrap_css__ = __webpack_require__(517);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_bootstrap_dist_css_bootstrap_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_bootstrap_dist_css_bootstrap_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_bootstrap_vue_dist_bootstrap_vue_css__ = __webpack_require__(520);
@@ -56564,18 +56563,25 @@ if (false) {
 
 /***/ }),
 /* 345 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(__dirname, process) {var express = __webpack_require__(346);
-var path = __webpack_require__(19);
-var serveStatic = __webpack_require__(184);
-app = express();
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__dirname, process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_express__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_express___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_express__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_path__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_path___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_path__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_serve_static__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_serve_static___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_serve_static__);
 
-app.use(serveStatic(__dirname + "/dist"));
+
+
+app = __WEBPACK_IMPORTED_MODULE_0_express___default()();
+
+app.use(__WEBPACK_IMPORTED_MODULE_2_serve_static___default()(__dirname + "/dist"));
 var port = process.env.PORT || 5000;
 app.listen(port);
 console.log('Rodando na porta ' + port);
-/* WEBPACK VAR INJECTION */}.call(exports, "/", __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, "/", __webpack_require__(6)))
 
 /***/ }),
 /* 346 */
