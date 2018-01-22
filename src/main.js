@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueResource from 'vue-resource'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router/router.js'
@@ -8,7 +9,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(BootstrapVue);
-Vue.component('globalImports', globalImports)
+Vue.use(VueResource);
+Vue.component('globalImports', globalImports);
 
 new Vue({
   el: '#katrequefy',

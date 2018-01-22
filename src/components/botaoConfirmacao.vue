@@ -1,21 +1,21 @@
 <template>
   <transition name="bounce" appear>
-    <button type="button" class="btn btn-primary" v-on:click="irPath()">{{Nome}}</button>
+    <button type="button" class="btn btn-primary" v-on:click="clickEvent()">{{Nome}}</button>
   </transition>
 </template>
 
 <script>
   export default {
     name: 'botaoConfirmacao',
-    props: ['nome', 'link'],
+    props: ['nome', 'funcao'],
     data: function() {
       return {
-        Nome: this.nome
+        Nome: this.nome,
       }
     },
     methods: {
-      irPath: function() {
-         this.$router.push(this.link);
+      clickEvent() {
+        this.$emit('redirect');
       }
     }
   }

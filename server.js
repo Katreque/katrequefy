@@ -1,6 +1,0 @@
-app = express();
-
-app.use(serveStatic(__dirname + "/dist"));
-var port = process.env.PORT || 5000;
-app.listen(port);
-console.log('Rodando na porta '+ port);
